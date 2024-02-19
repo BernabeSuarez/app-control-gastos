@@ -16,7 +16,7 @@ const Navbar = () => {
     >
       <div id="tabs" className="flex justify-between w-full">
         <Link
-          href="/"
+          href="/main"
           className="w-full flex justify-center text-center pt-2 pb-1"
         >
           <Image

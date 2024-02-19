@@ -1,20 +1,20 @@
 "use client";
 
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "./firebase/config";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
-  const [user] = useAuthState(auth);
-  const router = useRouter();
-
-  if (!user) {
-    router.push("/sign-in");
-  }
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>App Gastos usuario Logueado</h1>
+      <div className="flex flex-col text-center">
+        <h1>Mantene tus gastos ordenados</h1>
+        <h3>
+          La manera más fácil de realizar un seguimiento, administrar y
+          registrar sus finanzas personales.
+        </h3>
+        <p>registre sus transacciones financieras personales.</p>
+        <p>Realice un seguimiento de sus gastos</p>
+      </div>
+      <Link href="/main">Entrar</Link>
     </main>
   );
 }
