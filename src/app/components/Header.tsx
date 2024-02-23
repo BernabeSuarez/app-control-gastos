@@ -6,7 +6,7 @@ const fecha = new Date();
 const Header = ({ img }: { img: string }) => {
   return (
     <section>
-      <div className="flex justify-between mb-4 items-center">
+      <div className="flex justify-between mb-4 items-center text-white px-8 mt-2">
         <h2>{fecha.toLocaleDateString()}</h2>
         <div className="flex flex-row gap-3 items-center">
           <Image

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from "./components/Header";
 
 import "./globals.css";
 
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#121212]">{children}</body>
+      <body className="">
+        {" "}
+        <Header img="/images/home.png" />
+        {children}
+      </body>
     </html>
   );
 }
